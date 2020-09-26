@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
@@ -24,15 +25,15 @@
   </div>
 
   <aside>
-    <fieldset>
-      <legend>Стоимость:</legend>
+    <div>
+      <h2>Стоимость:</h2>
       <input type="range" name="cost" min="0" max="15000" value="7500">
       <div>
         от <output>0</output> до <output>15 000</output>
       </div>
-    </fieldset>
-    <fieldset>
-      <legend>Сетка:</legend>
+    </div>
+    <div>
+      <h2>Сетка:</h2>
       <label>
         <input type="radio" name="grid-type" value="1" checked>
         Адаптивная
@@ -45,15 +46,15 @@
         <input type="radio" name="grid-type" value="3">
         Резиновая
       </label>
-    </fieldset>
-    <fieldset>
-      <legend>Особенности</legend>
+    </div>
+    <div>
+      <h2>Особенности</h2>
       <label><input type="checkbox" name="feature-slider" checked> Слайдер </label>
       <label><input type="checkbox" name="feature-advantages" > Блок приемуществ </label>
       <label><input type="checkbox" name="feature-news" checked> Новости </label>
       <label><input type="checkbox" name="feature-gallery"> Галерея </label>
       <label><input type="checkbox" name="feature-shopping_cart"> Корзина </label>
-    </fieldset>
+    </div>
     <button>Показать</button>
   </aside>
   <section>
