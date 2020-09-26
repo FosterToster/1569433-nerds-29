@@ -1,0 +1,42 @@
+:root {
+  --basic-grey: #eee;
+  --basic-text: #000;
+  --basic-white: #fff;
+
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header*/
+.page-header {
+  background-color: var(--basic-grey);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+}
+
+/*main*/
+
+.main-about {
+  background-color: var(--basic-grey);
+}
+
+.main-about h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.main-about
