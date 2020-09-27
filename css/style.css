@@ -1,9 +1,21 @@
 :root {
+  --basic-black: #000;
   --basic-grey: #eee;
+  --grey-dark: #555;
+  --grey-dark-dark: #444;
   --basic-text: #000;
   --basic-white: #fff;
-
-
+  --text-white-transparent: rgba(255,255,255,.3);
+  --text-grey: #283136;
+  --red: #FB565A;
+  --red-darken: #E74246;
+  --red-dark: #D7373B;
+  --green: #00CA74;
+  --green-darken: #00BC6C;
+  --green-dark: #00AA62;
+  --yellow: #EFC849;
+  --yellow-darken: #EAB534;
+  --yellow-dark: #E5A722;
 }
 
 body {
@@ -12,6 +24,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.visual-delimiter {
+  background-color: var(--basic-grey);
+  height: 2px;
+  border: none;
 }
 
 /*header*/
@@ -28,15 +46,189 @@ a {
   color: var(--basic-black);
 }
 
+.nav-link:hover {
+  color: var(--red);
+}
+
+.nav-link:active{
+  color: var(--basic-black);
+  opacity: .3;
+}
+
 /*main*/
 
-.main-about {
+.main-tagline {
   background-color: var(--basic-grey);
 }
 
-.main-about h2 {
+.main-tagline h2 {
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
-.main-about
+.main-tagline p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-grey);
+}
+
+/*buttons*/
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-red {
+  background-color: var(--red);
+  color: var(--basic-white);
+}
+
+.button-red:hover {
+  background-color: var(--red-darken);
+}
+
+.button-red:active{
+  background-color: var(--red-dark);
+  color: var(--text-white-transparent);
+}
+
+.button-green {
+  background-color: var(--green);
+  color: var(--basic-white);
+}
+
+.button-green:hover {
+  background-color: var(--green-darken);
+}
+
+.button-green:active{
+  background-color: var(--green-dark);
+  color: var(--text-white-transparent);
+}
+
+.button-yellow {
+  background-color: var(--yellow);
+  color: var(--basic-white);
+}
+
+.button-yellow:hover {
+  background-color: var(--yellow-darken);
+}
+
+.button-yellow:active{
+  background-color: var(--yellow-dark);
+  color: var(--text-white-transparent);
+}
+
+/*services*/
+
+.services-item  h2{
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services-item p {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--text-grey);
+}
+
+/*about-block*/
+
+.about-us h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-grey);
+}
+
+.about-us-facilities h3 {
+  color: var(--text-grey);
+
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+}
+
+.facilities-item {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--text-grey);
+}
+
+.about-us-achievements h3{
+  color: var(--text-grey);
+
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+}
+
+.achievements-item span{
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.achievements-item p {
+  font-size: 16px;
+  line-height: 18px;
+
+  color: var(--text-grey);
+}
+
+/*footer*/
+
+.footer-contacts {
+  background-color: var(--basic-white);
+}
+
+.footer-contacts h2 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-contacts address {
+  font-size: 16px;
+  line-height: 18px;
+
+  color: var(--grey-dark);
+  font-style: normal;
+}
+
+.footer-contacts a {
+  font-size: 16px;
+  line-height: 18px;
+
+  color: var(--grey-dark);
+  font-style: normal;
+}
+
+.footer-friends h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.footer-friends p {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--grey-dark-dark);
+
+}
