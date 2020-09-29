@@ -1,6 +1,7 @@
 :root {
   --basic-black: #000;
   --basic-grey: #eee;
+  --basic-grey-social: #e1e1e1;
   --basic-grey-darken: #dfdfdf;
   --basic-grey-dark: #d5d5d5;
   --grey-dark: #555;
@@ -308,6 +309,16 @@ a {
 
 
 /*footer*/
+
+.footer-social-link a{
+  height: 81px;
+  width: 81px;
+  display: inline-block;
+  text-align: center;
+  line-height: 90px;
+  border-radius: 50%;
+  background-color: var(--basic-grey-social);
+}
 
 .footer-contacts {
   background-color: var(--basic-white);
