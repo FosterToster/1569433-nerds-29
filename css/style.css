@@ -52,7 +52,7 @@ a {
 /*header*/
 .page-header {
   background-color: var(--basic-grey);
-  height: 114px;
+  /*height: 114px;*/
   /*padding-top: 50px;*/
 }
 
@@ -92,9 +92,27 @@ a {
 
 /*main*/
 
+.main-header {
+  background-color: var(--basic-grey);
+  height: 235px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
 .main-header h1 {
   font-size: 55px;
   line-height: 55px;
+}
+
+
+
+
+
+.main-shop {
+  display: grid;
+  grid-template-columns: min-content 1fr;
 }
 
 .filter h2 {
@@ -215,6 +233,10 @@ a {
   border-radius: 3px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.button-giant{
+  padding: 17px 72px;
 }
 
 .button-huge {
@@ -383,9 +405,20 @@ a {
 .main-parnters li:nth-child(4)::after{ content: none; }
 
 /*templates*/
+.templates-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 30px;
+}
 
 .templates-item {
   background-color: var(--template-backgound);
+  position: relative;
+}
+
+.templates-item:hover {
+  box-shadow: 10px 10px 22px -9px rgba(0,0,0,0.75);
 }
 
 .templates-item:hover > .templates-item-head  {
@@ -398,6 +431,12 @@ a {
 .templates-item-about {
   display: none;
   background-color: var(--basic-grey);
+
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  height: 231px;
 }
 
 .templates-item-about h2 {
