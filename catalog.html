@@ -38,48 +38,46 @@
       </div>
       <div class="filter">
         <h2>Сетка:</h2>
-        <label>
-          <input type="radio" name="grid-type" value="1" checked>
-          Адаптивная
-        </label>
-        <label>
-          <input type="radio" name="grid-type" value="2">
-          Фисированная
-        </label>
-        <label>
-          <input type="radio" name="grid-type" value="3">
-          Резиновая
-        </label>
+        <ul class="filter-items">
+          <li><input id="gt-1" type="radio" name="grid-type" value="1" checked><label for="gt-1">Адаптивная</label></li>
+          <li><input id="gt-2" type="radio" name="grid-type" value="2" checked><label for="gt-2">Фисированная</label></li>
+          <li><input id="gt-3" type="radio" name="grid-type" value="3" checked><label for="gt-3">Резиновая</label></li>
+        </ul>
       </div>
       <div class="filter">
         <h2>Особенности:</h2>
-        <input id="ft-1" type="checkbox" name="feature-slider" checked disabled> <label for="ft-1"> Слайдер </label>
-        <input id="ft-2" type="checkbox" name="feature-advantages" > <label for="ft-2"> Блок приемуществ </label>
-        <input id="ft-3" type="checkbox" name="feature-news" checked> <label for="ft-3"> Новости </label>
-        <input id="ft-4" type="checkbox" name="feature-gallery"> <label for="ft-4"> Галерея </label>
-        <input id="ft-5" type="checkbox" name="feature-shopping_cart"><label for="ft-5">  Корзина </label>
+        <ul class="filter-items">
+          <li><input id="ft-1" type="checkbox" name="feature-slider" checked disabled> <label for="ft-1"> Слайдер </label></li>
+          <li><input id="ft-2" type="checkbox" name="feature-advantages" > <label for="ft-2"> Блок приемуществ </label></li>
+          <li><input id="ft-3" type="checkbox" name="feature-news" checked> <label for="ft-3"> Новости </label></li>
+          <li><input id="ft-4" type="checkbox" name="feature-gallery"> <label for="ft-4"> Галерея </label></li>
+          <li><input id="ft-5" type="checkbox" name="feature-shopping_cart"><label for="ft-5">  Корзина </label></li>
+        </ul>
       </div>
-      <button class="button button-grey button-giant">Показать</button>
+      <button class="button button-grey button-filter-show">Показать</button>
     </aside>
     <section class="main-templates">
       <h2 hidden>Результаты поиска</h2>
       <div class="templates-sort">
         <span class="sort-header">Сортировать:</span>
-        <ul class="sort-list">
-          <li class="sort-item">
-            <input id="sort-1" type="radio" name="sort-type" value="1" checked><label for="sort-1"> По цене</label>
-          </li>
-          <li class="sort-item">
-            <input id="sort-2" type="radio" name="sort-type" value="2"><label for="sort-2"> По типу</label>
-          </li>
-          <li class="sort-item">
-            <input id="sort-3" type="radio" name="sort-type" value="3"><label for="sort-3"> По назначению</label>
-          </li>
-        </ul>
-        <ul class="sort-list">
-          <li class="sort-item"><input id="way-1" type="radio" name="sort-way" value="1" checked><label for="way-1"> V</label></li>
-          <li class="sort-item"><input id="way-2" type="radio" name="sort-way" value="2"><label for="way-2"> ^</label></li>
-        </ul>
+
+        <div class="sort-items">
+          <ul class="sort-list">
+            <li class="sort-item">
+              <input id="sort-1" type="radio" name="sort-type" value="1" checked><label for="sort-1"> По цене</label>
+            </li>
+            <li class="sort-item">
+              <input id="sort-2" type="radio" name="sort-type" value="2"><label for="sort-2"> По типу</label>
+            </li>
+            <li class="sort-item">
+              <input id="sort-3" type="radio" name="sort-type" value="3"><label for="sort-3"> По назначению</label>
+            </li>
+          </ul>
+          <ul class="sort-list">
+            <li class="sort-item"><input id="way-1" type="radio" name="sort-way" value="1" checked><label for="way-1"> V</label></li>
+            <li class="sort-item"><input id="way-2" type="radio" name="sort-way" value="2"><label for="way-2"> ^</label></li>
+          </ul>
+        </div>
       </div>
       <div class="templates-items">
         <article class="templates-item">
