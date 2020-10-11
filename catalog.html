@@ -10,14 +10,14 @@
 <body>
 <header class="page-header">
   <nav class="nav container">
-    <a href="index.html"><img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Nёrds"></a>
+    <a href="index.html"><img src="img/nerds-logo.svg" class="page-logo" width="159.87" height="65.02" alt="Nёrds"></a>
     <ul class="nav-link-list">
       <li><a href="index.html" class="nav-link">Студия</a></li>
       <li><a href="blank.html" class="nav-link">Клиенты</a></li>
       <li><a href="catalog.html" class="nav-link nav-link-current">Магазин</a></li>
       <li><a href="blank.html" class="nav-link">Контакты</a></li>
     </ul>
-    <a href="blank.html" class="nav-link cart">Корзина</a>
+    <a href="blank.html" class="cart nav-link">Корзина</a>
   </nav>
 </header>
 
@@ -39,50 +39,50 @@
       <div class="filter">
         <h2>Сетка:</h2>
         <ul class="filter-items">
-          <li><input id="gt-1" type="radio" name="grid-type" value="1" checked><label for="gt-1">Адаптивная</label></li>
-          <li><input id="gt-2" type="radio" name="grid-type" value="2" checked><label for="gt-2">Фисированная</label></li>
-          <li><input id="gt-3" type="radio" name="grid-type" value="3" checked><label for="gt-3">Резиновая</label></li>
+          <li><input id="gt-1" type="radio" class="visually-hidden" disabled name="grid-type" value="1" checked><label for="gt-1">Адаптивная</label></li>
+          <li><input id="gt-2" type="radio" class="visually-hidden" name="grid-type" value="2"><label for="gt-2">Фиксированная</label></li>
+          <li><input id="gt-3" type="radio" class="visually-hidden" name="grid-type" value="3"><label for="gt-3">Резиновая</label></li>
         </ul>
       </div>
       <div class="filter">
         <h2>Особенности:</h2>
         <ul class="filter-items">
-          <li><input id="ft-1" type="checkbox" name="feature-slider" checked disabled> <label for="ft-1"> Слайдер </label></li>
-          <li><input id="ft-2" type="checkbox" name="feature-advantages" > <label for="ft-2"> Блок приемуществ </label></li>
-          <li><input id="ft-3" type="checkbox" name="feature-news" checked> <label for="ft-3"> Новости </label></li>
-          <li><input id="ft-4" type="checkbox" name="feature-gallery"> <label for="ft-4"> Галерея </label></li>
-          <li><input id="ft-5" type="checkbox" name="feature-shopping_cart"><label for="ft-5">  Корзина </label></li>
+          <li><input id="ft-1" type="checkbox" class="visually-hidden" name="feature-slider" checked disabled> <label for="ft-1"> Слайдер </label></li>
+          <li><input id="ft-2" type="checkbox" class="visually-hidden" name="feature-advantages" > <label for="ft-2"> Блок приемуществ </label></li>
+          <li><input id="ft-3" type="checkbox" class="visually-hidden" name="feature-news" checked> <label for="ft-3"> Новости </label></li>
+          <li><input id="ft-4" type="checkbox" class="visually-hidden" name="feature-gallery"> <label for="ft-4"> Галерея </label></li>
+          <li><input id="ft-5" type="checkbox" class="visually-hidden" name="feature-shopping_cart"><label for="ft-5">  Корзина </label></li>
         </ul>
       </div>
       <button class="button button-grey button-filter-show">Показать</button>
     </aside>
     <section class="main-templates">
-      <h2 hidden>Результаты поиска</h2>
+      <h2 class="visually-hidden">Результаты поиска</h2>
       <div class="templates-sort">
         <span class="sort-header">Сортировать:</span>
 
         <div class="sort-items">
           <ul class="sort-list">
             <li class="sort-item">
-              <input id="sort-1" type="radio" name="sort-type" value="1" checked><label for="sort-1"> По цене</label>
+              <input id="sort-1" class="visually-hidden" type="radio" name="sort-type" value="1" checked><label for="sort-1"> По цене</label>
             </li>
             <li class="sort-item">
-              <input id="sort-2" type="radio" name="sort-type" value="2"><label for="sort-2"> По типу</label>
+              <input id="sort-2" class="visually-hidden" type="radio" name="sort-type" value="2"><label for="sort-2"> По типу</label>
             </li>
             <li class="sort-item">
-              <input id="sort-3" type="radio" name="sort-type" value="3"><label for="sort-3"> По назначению</label>
+              <input id="sort-3" class="visually-hidden" type="radio" name="sort-type" value="3"><label for="sort-3"> По назначению</label>
             </li>
           </ul>
           <ul class="sort-list">
-            <li class="sort-item"><input id="way-1" type="radio" name="sort-way" value="1" checked><label for="way-1"> V</label></li>
-            <li class="sort-item"><input id="way-2" type="radio" name="sort-way" value="2"><label for="way-2"> ^</label></li>
+            <li class="sort-item"><input id="way-1" class="visually-hidden" type="radio" name="sort-way" value="1" checked><label for="way-1"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11" fill="#231F20"/></svg></label></li>
+            <li class="sort-item"><input id="way-2" class="visually-hidden" type="radio" name="sort-way" value="2"><label for="way-2"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/></svg></label></li>
           </ul>
         </div>
       </div>
       <div class="templates-items">
         <article class="templates-item">
           <div class="templates-item-head">
-            <span>...</span>
+            
           </div>
           <img src="img/img-sedona.jpg" width="359" height="587"  alt="">
           <div class="templates-item-about">
@@ -96,7 +96,7 @@
         </article>
         <article class="templates-item">
           <div class="templates-item-head">
-            <span>...</span>
+            
           </div>
           <img src="img/img-pink.jpg" width="359" height="587"  alt="">
           <div class="templates-item-about">
@@ -110,7 +110,7 @@
         </article>
         <article class="templates-item">
           <div class="templates-item-head">
-            <span>...</span>
+            
           </div>
           <img src="img/img-barbershop.jpg" width="359" height="587"  alt="">
           <div class="templates-item-about">
@@ -124,7 +124,7 @@
         </article>
         <article class="templates-item">
           <div class="templates-item-head">
-            <span>...</span>
+            
           </div>
           <img src="img/img-mishka.jpg" width="359" height="587"  alt="">
           <div class="templates-item-about">
@@ -138,7 +138,7 @@
         </article>
         <article class="templates-item">
           <div class="templates-item-head">
-            <span>...</span>
+            
           </div>
           <img src="img/img-aplus.jpg" width="359" height="587"  alt="">
           <div class="templates-item-about">
@@ -152,7 +152,7 @@
         </article>
         <article class="templates-item">
           <div class="templates-item-head">
-            <span>...</span>
+            
           </div>
           <img src="img/img-kvast.jpg" width="359" height="587"  alt="">
           <div class="templates-item-about">
@@ -165,11 +165,11 @@
           </div>
         </article>
       </div>
-      <div>
-        <button class="button button-grey" >1</button>
-        <button class="button button-grey" >2</button>
-        <button class="button button-grey" >3</button>
-        <button class="button button-grey" >Следующая</button>
+      <div class="templates-pagination">
+        <button class="button button-grey button-square pagination-current" >1</button>
+        <button class="button button-grey button-square" >2</button>
+        <button class="button button-grey button-square" >3</button>
+        <button class="button button-grey button-giant" >Следующая</button>
       </div>
     </section>
   </div>
