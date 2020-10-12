@@ -45,6 +45,7 @@ a {
 
 .container {
   margin: 0 140px;
+  width: 1160px;
 }
 
 .visual-delimiter {
@@ -57,8 +58,11 @@ a {
 /*header*/
 .page-header {
   background-color: var(--basic-grey);
-  /*height: 114px;*/
-  padding-top: 50px;
+  padding-top: 48px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .page-logo:active {
@@ -69,18 +73,22 @@ a {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .nav-link {
   font-weight: 500;
   font-size: 16px;
-  line-height: 56px;
+  line-height: 30px;
   display: inline-block;
 
   text-transform: uppercase;
 
   color: var(--basic-black);
+
+  margin-bottom: 10px;
+
+  position: relative;
 }
 
 .cart {
@@ -100,18 +108,31 @@ a {
   transform: translateY(-50%);
 }
 
-.nav-link-current {
-  border-bottom: solid 2px var(--red);
+.nav-link-current::after {
+  position: absolute;
+  content: "";
+  background-color: var(--red);
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 43px;
+
+
 }
 
 .nav-link-list {
   display: flex;
-  align-self: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-width: 800px;
 
   gap: 46px;
 
   list-style: none;
   padding: 0;
+  margin: 0;
+
+  padding-right: 85px;
 }
 
 .nav-link:hover {
@@ -229,46 +250,57 @@ a {
   align-items: center;
 }
 
+.tagline-content > section {
+  margin-bottom: 12px;
+}
+
 .tagline-image-container {
   justify-self: right;
+  margin-right: 2px;
+  /*margin-top: 2px;*/
 }
 
 .main-tagline h2 {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+
+  margin: 0 0 28px 0;
 }
 
 .main-tagline p {
   font-size: 16px;
   line-height: 24px;
   color: var(--text-grey);
+
+  margin-bottom: 38px;
 }
 
 .main-services {
   list-style: none;
   padding: 0;
-  margin-top: 134px;
-  margin-bottom: 134px;
+  margin-top: 73px;
+  margin-bottom: 80px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 134px;
-  justify-items: center;
+  gap: 40px;
+  justify-items: start;
   align-items: start;
 }
 
 .main-about {
   display: grid;
   grid-template-columns: max-content 1fr;
-  justify-items: center;
+  justify-content: space-between;
 
   margin-top: 39px;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 }
 
 .about-us-achievements h3 {
   text-align: center;
+  margin-right: 15px;
 }
 
 .achievements-list {
@@ -277,6 +309,9 @@ a {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+
+  margin-right: 15px;
 }
 
 /*buttons*/
@@ -302,7 +337,7 @@ a {
 }
 
 .button-regular {
-  padding: 17px 44px;
+  padding: 16px 40px;
 }
 
 .button-filter-show {
@@ -373,6 +408,8 @@ a {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 21px;
+  margin-bottom: 17px;
 }
 
 .services-item p {
@@ -380,6 +417,7 @@ a {
   line-height: 24px;
 
   color: var(--text-grey);
+  margin-bottom: 31px;
 }
 
 /*about-block*/
@@ -387,7 +425,9 @@ a {
 .about-us h2 {
   font-size: 45px;
   line-height: 45px;
-  margin-bottom: 32px;
+  font-weight: 500;
+  margin-bottom: 34px;
+  margin-top: 34px;
 }
 
 .about-us p {
@@ -416,7 +456,7 @@ a {
 .facilities-item {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 1.1em;
+  margin-bottom: 24px;
 
   color: var(--text-grey);
 
@@ -437,7 +477,13 @@ a {
 
 }
 
-.about-us-achievements h3{
+.about-us-achievements {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.about-us-achievements h3 {
   color: var(--text-grey);
 
   font-size: 16px;
@@ -446,7 +492,7 @@ a {
   text-transform: uppercase;
 
   margin-top: 37px;
-  margin-bottom: 31px;
+  margin-bottom: 15px;
 }
 
 .achievements-item span{
@@ -460,52 +506,75 @@ a {
   line-height: 18px;
 
   color: var(--text-grey);
+
+  margin-top: 12px;
 }
 
 .achievements-item sup {
-  top: -0.25em;
+  top: -.6em;
+  font-size: .6em;
+}
+
+.main-partners {
+  display: flex;
+  justify-content: center;
 }
 
 .main-partners + hr {
   margin-bottom: 40px;
 }
 
-.parnters-list {
+.partners-list {
   list-style: none;
   padding: 0;
 
-  margin-top: 46px;
-  margin-bottom: 44px;
+  margin-top: 50px;
+  margin-bottom: 36px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  gap: 95px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 80px;
 }
 
-.parnters-list li { position: relative;}
-.parnters-list li::after {
+.partner-htmlacademy {
+  margin-top: 15px;
+}
+
+.partners-list li { 
+  position: relative;
+  width: 220px;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners-list li::after {
   content: "";
   background-color: var(--basic-grey);
 
   position: absolute;
-  left: calc(100% + 50px);
-  top: 20px;
+  right: -40px;
+  top: 40px;
+  transform: translateY(-50%);
 
   height: 52px;
   width: 1px;
 }
-.parnters-list li:nth-child(4)::after{ content: none; }
+.partners-list li:nth-child(4)::after{ content: none; }
 
-.parnters-list img {
+.partners-list img {
   opacity: .2;
 }
 
-.parnters-list img:hover {
+.partners-list img:hover {
   opacity: 1;
 }
 
-.parnters-list img:active {
+.partners-list img:active {
   opacity: .1;
 }
 
@@ -615,15 +684,6 @@ a {
   top: 86px;
 }
 
-.footer-contacts {
-  display: inline-block;
-  background-color: var(--basic-white);
-  height: 308;
-  width: 319;
-  
-  padding: 50px;
-  margin: 54px 140px;
-}
 
 .footer-social {
   display: flex;
@@ -636,7 +696,7 @@ a {
 .footer-social ul {
   display: flex;
   justify-content: flex-start;
-  gap: 9px;
+  gap: 10px;
 
   list-style: none;
   padding: 0;
@@ -645,11 +705,12 @@ a {
 }
 
 .footer-social-link a{
-  height: 81px;
-  width: 81px;
-  display: inline-block;
-  text-align: center;
-  line-height: 90px;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*line-height: 88px;*/
   border-radius: 50%;
   background-color: var(--basic-grey-social);
 }
@@ -663,6 +724,13 @@ a {
 }
 
 .footer-contacts {
+  display: inline-block;
+  background-color: var(--basic-white);
+  height: 308px;
+  width: 319px;
+  
+  padding: 50px;
+  margin: 54px 140px;
   background-color: var(--basic-white);
 }
 
@@ -671,6 +739,7 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
+  margin: 0 0 22px 0 ;
 }
 
 .footer-contacts address {
@@ -698,11 +767,15 @@ a {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 1px;
 }
 
 .footer-friends p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   color: var(--grey-dark-dark);
+  margin: 0;
 
 }
