@@ -841,18 +841,12 @@ a {
   gap: 19px;
 }
 
-
-.sort-item:not(:first-child) {
-  /*margin-left: 25px;*/
-}
-
 .templates-items {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   column-gap: 42px;
   row-gap: 31px;
-  /*gap: 42px;*/
 }
 
 .templates-item {
