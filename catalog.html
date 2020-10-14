@@ -29,17 +29,24 @@
     <aside class="main-filters">
       <div class="filter">
         <h2>Стоимость:</h2>
-        <div class="slider-background">
-          <input type="range" name="cost" min="0" max="15000" value="7500">
-        </div>
-        <div>
-          от <output>0</output> до <output>15 000</output>
+        <div class="slider-container">
+          <div class="slider-block slider-range-container">
+            <div class="slider-range">
+              <div id="slider-dot-min" class="slider-dot" style="left:-2%;"></div>
+              <div id="slider-diff" class="slider-diff" style="left:0%; right: 28%;" ></div>
+              <div id="slider-dot-max" class="slider-dot" style="right:28%;"></div>
+            </div>
+          </div>
+          <div class="slider-data">
+            <label>от <input id="slider-data-min" class="slider-block slider-input" type="number" value="0" min="0" max="20333"></label>
+            <label>до <input id="slider-data-max" class="slider-block slider-input" type="number" min="0" max="20333" value="15000"></input></label>
+          </div>
         </div>
       </div>
       <div class="filter">
         <h2>Сетка:</h2>
         <ul class="filter-items">
-          <li><input id="gt-1" type="radio" class="visually-hidden" disabled name="grid-type" value="1" checked><label for="gt-1">Адаптивная</label></li>
+          <li><input id="gt-1" type="radio" class="visually-hidden" name="grid-type" value="1" checked><label for="gt-1">Адаптивная</label></li>
           <li><input id="gt-2" type="radio" class="visually-hidden" name="grid-type" value="2"><label for="gt-2">Фиксированная</label></li>
           <li><input id="gt-3" type="radio" class="visually-hidden" name="grid-type" value="3"><label for="gt-3">Резиновая</label></li>
         </ul>
@@ -47,7 +54,7 @@
       <div class="filter">
         <h2>Особенности:</h2>
         <ul class="filter-items">
-          <li><input id="ft-1" type="checkbox" class="visually-hidden" name="feature-slider" checked disabled> <label for="ft-1"> Слайдер </label></li>
+          <li><input id="ft-1" type="checkbox" class="visually-hidden" name="feature-slider" checked> <label for="ft-1"> Слайдер </label></li>
           <li><input id="ft-2" type="checkbox" class="visually-hidden" name="feature-advantages" > <label for="ft-2"> Блок приемуществ </label></li>
           <li><input id="ft-3" type="checkbox" class="visually-hidden" name="feature-news" checked> <label for="ft-3"> Новости </label></li>
           <li><input id="ft-4" type="checkbox" class="visually-hidden" name="feature-gallery"> <label for="ft-4"> Галерея </label></li>
@@ -70,10 +77,10 @@
               <input id="sort-2" class="visually-hidden" type="radio" name="sort-type" value="2"><label for="sort-2"> По типу</label>
             </li>
             <li class="sort-item">
-              <input id="sort-3" class="visually-hidden" type="radio" name="sort-type" value="3"><label for="sort-3"> По назначению</label>
+              <input id="sort-3" class="visually-hidden" type="radio" name="sort-type" value="3"><label for="sort-3"> По названию</label>
             </li>
           </ul>
-          <ul class="sort-list">
+          <ul class="sort-list sort-list-narrow">
             <li class="sort-item"><input id="way-1" class="visually-hidden" type="radio" name="sort-way" value="1" checked><label for="way-1"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11" fill="#231F20"/></svg></label></li>
             <li class="sort-item"><input id="way-2" class="visually-hidden" type="radio" name="sort-way" value="2"><label for="way-2"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/></svg></label></li>
           </ul>
@@ -84,7 +91,7 @@
           <div class="templates-item-head">
             
           </div>
-          <img src="img/img-sedona.jpg" width="359" height="587"  alt="">
+          <img src="img/img-sedona.jpg" width="359" height="578"  alt="">
           <div class="templates-item-about">
             <h2>SEDONA</h2>
             <p>
@@ -98,7 +105,7 @@
           <div class="templates-item-head">
             
           </div>
-          <img src="img/img-pink.jpg" width="359" height="587"  alt="">
+          <img src="img/img-pink.jpg" width="359" height="578"  alt="">
           <div class="templates-item-about">
             <h2>Pink App</h2>
             <p>
@@ -112,7 +119,7 @@
           <div class="templates-item-head">
             
           </div>
-          <img src="img/img-barbershop.jpg" width="359" height="587"  alt="">
+          <img src="img/img-barbershop.jpg" width="359" height="578"  alt="">
           <div class="templates-item-about">
             <h2>Barbershop</h2>
             <p>
@@ -126,7 +133,7 @@
           <div class="templates-item-head">
             
           </div>
-          <img src="img/img-mishka.jpg" width="359" height="587"  alt="">
+          <img src="img/img-mishka.jpg" width="359" height="578"  alt="">
           <div class="templates-item-about">
             <h2>Mishka</h2>
             <p>
@@ -140,7 +147,7 @@
           <div class="templates-item-head">
             
           </div>
-          <img src="img/img-aplus.jpg" width="359" height="587"  alt="">
+          <img src="img/img-aplus.jpg" width="359" height="578"  alt="">
           <div class="templates-item-about">
             <h2>A+</h2>
             <p>
@@ -154,7 +161,7 @@
           <div class="templates-item-head">
             
           </div>
-          <img src="img/img-kvast.jpg" width="359" height="587"  alt="">
+          <img src="img/img-kvast.jpg" width="359" height="578"  alt="">
           <div class="templates-item-about">
             <h2>Кваст</h2>
             <p>
@@ -169,22 +176,21 @@
         <button class="button button-grey button-square pagination-current" >1</button>
         <button class="button button-grey button-square" >2</button>
         <button class="button button-grey button-square" >3</button>
-        <button class="button button-grey button-giant" >Следующая</button>
+        <button class="button button-grey button-pagination" >Следующая</button>
       </div>
     </section>
   </div>
 </main>
 
-<footer class="page-footer">
+<footer class="page-footer catalog-footer-fix">
   <div class="footer-map">
     <article class="footer-contacts">
       <h2>Nёrds design studio</h2>
       <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
       <a href="tel:+798122757575">тел. +7 (812) 275-75-75</a>
-      <button class="button button-red button-regular">Напишите нам</button>
+      <button class="button button-red button-filter-show">Напишите нам</button>
     </article>
-    <!--<img src="img/map.jpg" height="416" width="1440" alt=""/>-->
-    <img class="map-marker" src="img/map-marker.png" height="190" width="231" alt=""/>
+    <!--<img class="map-marker" src="img/map-marker.png" height="190" width="231" alt=""/>-->
   </div>
   <div class="container footer-social">
     <ul>
@@ -197,7 +203,6 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </div>
-
 </footer>
 </body>
 </html>
