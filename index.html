@@ -10,7 +10,7 @@
 <body>
 <header class="page-header">
   <nav class="nav container">
-    <a href="index.html"><img src="img/nerds-logo.svg" class="page-logo" width="159.87" height="65.02" alt="Nёrds"></a>
+    <a href="index.html"><img src="img/nerds-logo.svg" class="page-logo" width="160" height="65" alt="Nёrds"></a>
     <ul class="nav-link-list">
       <li><a href="index.html" class="nav-link nav-link-current">Студия</a></li>
       <li><a href="blank.html" class="nav-link">Клиенты</a></li>
@@ -23,8 +23,8 @@
 
 <main class="page-main">
   <div class="main-tagline">
-    <div class="tagline-content container">
-      <section >
+    <div class="tagline-content slide container slide-showing">
+      <section>
         <h2>Долго, дорого, <br> скрупулезно.</h2>
         <p>
           Математически выверенный дизайн<br>
@@ -34,6 +34,32 @@
       </section>
       <div class="tagline-image-container">
         <img src="img/nerds-index-slide.png" width="760" height="425" alt="">
+      </div>
+    </div>
+    <div class="tagline-content slide container" hidden>
+      <section>
+        <h2>Любим математику<br>как никто другой</h2>
+        <p>
+          Никакого креатива, только математически выверенные формулы<br>
+          для расчета идеальных пропорций.
+        </p>
+        <button class="button button-red button-huge">Узнать больше</button>
+      </section>
+      <div class="tagline-image-container">
+        <img src="img/nerds-second-slide.png" width="760" height="425" alt="">
+      </div>
+    </div>
+    <div class="tagline-content slide container" hidden>
+      <section>
+        <h2>Только ночь, <br> только хардкор</h2>
+        <p>
+          Работать днем как все? Мы против этого.<br>
+          Ближе к полуночи работа только начинается.
+        </p>
+        <button class="button button-red button-huge">Узнать больше</button>
+      </section>
+      <div class="tagline-image-container">
+        <img src="img/nerds-third-slide.png" width="760" height="425" alt="">
       </div>
     </div>
   </div>
@@ -86,7 +112,7 @@
       </section>
     </section>
     <section class="about-us-achievements">
-      <img src="img/nerds-illustration.png" width="360" height="208">
+      <img src="img/nerds-illustration.png" width="360" height="208" alt="Nerds">
       <h3>с 2004 года Любим точность во всем:</h3>
       <ul class="achievements-list">
         <li class="achievements-item">
@@ -116,7 +142,7 @@
   <hr class="visual-delimiter">
   <div class="main-partners container">
     <ul class="partners-list">
-      <li><a href="blank.html"><img src="img/html-academy-logo.png" alt="HTML Academy" width="199" height="67.82"></a></li>
+      <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy-logo.png" alt="HTML Academy" width="199" height="68"></a></li>
       <li><a href="blank.html"><img src="img/borodinski-logo.png" alt="Borodinski" width="209" height="90"></a></li>
       <li><a href="blank.html"><img src="img/pink-logo.png" alt="PINK" width="185" height="52"></a></li>
       <li><a href="blank.html"><img src="img/mishka-logo.png" alt="mishka" width="173" height="84"></a></li>
@@ -127,14 +153,17 @@
 
 <footer class="page-footer">
   <div class="footer-map">
-    <article class="footer-contacts">
-      <h2>Nёrds design studio</h2>
-      <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
-      <a href="tel:+798122757575">тел. +7 (812) 275-75-75</a>
-      <button class="button button-red button-filter-show">Напишите нам</button>
-    </article>
-    <!--<img src="img/map.jpg" height="416" width="1440" alt=""/>-->
-    <img class="map-marker" src="img/map-marker.png" height="190" width="231" alt=""/>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa4d1bc734fad355f26dd1e67c90d56c0bca71ecf21488060d5c4bbe5f25d94e7&amp;source=constructor"></iframe>
+    <div class="container"> 
+      <article class="footer-contacts">
+          <h2>Nёrds design studio</h2>
+          <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
+          <a href="tel:+798122757575">тел. +7 (812) 275-75-75</a>
+          <button class="button button-red button-filter-show">Напишите нам</button>
+        </article>
+        <!--<img src="img/map.jpg" height="416" width="1440" alt=""/>-->
+        <!-- <img class="map-marker" src="img/map-marker.png" height="190" width="231" alt=""/> -->
+    </div>
   </div>
   <div class="container footer-social">
     <ul>
