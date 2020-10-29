@@ -30,6 +30,8 @@
   --slider-range: #D7DCDF;
   --slider-dot: #ABABAB;
   --shadow: rgba(0, 1, 1, 0.25);  
+  --modal-shadow: rgba(0, 0, 0, 0.4);
+  --modal-input-still: #D7DCDE;
 }
 
 body {
@@ -549,6 +551,163 @@ a {
   margin-right: 15px;
 }
 
+/* modals */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  box-shadow: 0px 20px 40px var(--modal-shadow);
+  background-color: var(--basic-white);
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-mailto {
+  width: 960px;
+  height: 590px;
+  padding: 63px 100px;
+}
+
+.modal-visible {
+  display: block;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 37px;
+}
+
+.modal-header h2 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.modal-input label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.modal-input textarea {
+  padding: 16px;
+  width: 760px;
+  height: 118px;
+  overflow: auto;
+  border: 2px solid var(--modal-input-still);
+  border-radius: 3px;
+  outline: none;
+}
+
+.modal-input input {
+  padding: 16px;
+  width: 360px;
+  border: 2px solid var(--modal-input-still);
+  border-radius: 3px;
+  outline: none;
+}
+
+.modal-input input::placeholder,
+.modal-input textarea::placeholder {
+  color: var(--modal-input-still);
+}
+
+.modal-input input:focus,
+.modal-input textarea:focus {
+  border: 2px solid var(--basic-black);
+}
+.modal-input input:focus::placeholder,
+.modal-input textarea:focus::placeholder {
+  color: var(--grey-dark-dark);
+}
+
+.modal-input input:invalid,
+.modal-input textarea:invalid {
+  border: 2px solid var(--red-darken);
+}
+.modal-input input:invalid::placeholder,
+.modal-input textarea:invalid::placeholder {
+  color: var(--red-darken);
+}
+
+.modal-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.modal-message {
+  margin-bottom: 47px;
+}
+
+.modal-close{
+  content: "";
+  position: relative;
+
+  cursor: pointer;
+  padding: 16px;
+
+  background-color: transparent;
+  border: none;
+
+  opacity: .3;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: .1;
+}
+
+.modal-close::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top:50%;
+
+  border-radius: 1px;
+  width: 27px;
+  height: 4px;
+
+  background-color: var(--red);
+
+  transform: rotate(45deg);
+
+}
+.modal-close::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top:50%;
+
+  border-radius: 1px;
+  width: 27px;
+  height: 4px;
+
+  background-color: var(--red);
+
+  transform: rotate(-45deg);
+
+}
 /*buttons*/
 
 .button {

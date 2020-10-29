@@ -177,5 +177,34 @@
     </section>
   </div>
 </footer>
+
+<!-- Добавить класс "modal-visible" для отображения модалки -->
+<section class="modal modal-mailto ">
+  <div class="modal-header">
+    <h2>Напишите нам</h2>
+    <button class="modal-close"></button>
+  </div>
+  <div class="modal-content">
+    <form action="/echo.html" class="modal-form">
+      <div class="modal-user">
+        <div class="modal-input">
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" name="name" type="text" placeholder="Имя Фамилия">
+        </div>
+        <div class="modal-input">
+            <label for="user-email">Ваш email:</label>
+            <input required id="user-email" name="name" type="email" placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="modal-message">
+        <div class="modal-input">
+          <label for="user-message-text">Текст письма:</label>
+          <textarea name="user-message-text" id="user-message-text" placeholder="В свободной форме" cols="30" rows="5"></textarea>
+        </div>
+      </div>
+      <input type="submit" value="Отправить" class="button button-red button-giant">
+    </form>
+  </div>
+</section>
 </body>
 </html>
