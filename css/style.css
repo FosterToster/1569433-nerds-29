@@ -1058,7 +1058,8 @@ a {
   bottom: 0;
   left:0;
   right: 0;
-  height: 231px;
+  min-height: 231px;
+  max-height: 580px;
 }
 
 .templates-item-about h2 {
@@ -1071,6 +1072,23 @@ a {
   margin-bottom: 0;
 }
 
+.templates-item-about a {
+  color: var(--basic-black);
+}
+
+.templates-item-about a:hover {
+  color: var(--red-darken);
+}
+
+.templates-item-about a:active {
+  color: var(--basic-black);
+  opacity: .3;
+}
+
+.templates-item-about > .button {
+  margin-bottom: 44px;
+}
+
 .templates-item-about p {
   font-size: 16px;
   line-height: 18px;
@@ -1079,6 +1097,9 @@ a {
 
   margin-top: 12px;
   margin-bottom: 32px;
+
+  max-height: 60%;
+  overflow-y: auto;
 }
 
 .templates-item-head {
