@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body tabindex="-1">
 <header class="page-header">
   <nav class="nav container">
     <a href="index.html"><img src="img/nerds-logo.svg" class="page-logo" width="160" height="65" alt="Nёrds"></a>
@@ -26,7 +26,7 @@
     <h1>Магазин готовых шаблонов</h1>
   </div>
   <div class="container main-shop">
-    <form action="/echo.html" class="main-filters">
+    <form aria-label="Фильтр готовых шаблонов" action="/echo.html" class="main-filters">
       <div class="filter">
         <h2>Стоимость:</h2>
         <div class="slider-container">
@@ -38,30 +38,30 @@
             </div>
           </div>
           <div class="slider-data">
-            <label>от <input id="slider-data-min" class="slider-block slider-input" type="number" value="0" min="0" max="20333"></label>
-            <label>до <input id="slider-data-max" class="slider-block slider-input" type="number" min="0" max="20333" value="15000"></label>
+            <label>от <input aria-label="Стоимость - от" id="slider-data-min" class="slider-block slider-input" type="number" value="0" min="0" max="20333"></label>
+            <label>до <input aria-label="Стоимость - до" id="slider-data-max" class="slider-block slider-input" type="number" min="0" max="20333" value="15000"></label>
           </div>
         </div>
       </div>
       <div class="filter">
         <h2>Сетка:</h2>
         <ul class="filter-items">
-          <li><input id="gt-1" type="radio" class="visually-hidden" name="grid-type" value="1" checked><label for="gt-1">Адаптивная</label></li>
-          <li><input id="gt-2" type="radio" class="visually-hidden" name="grid-type" value="2"><label for="gt-2">Фиксированная</label></li>
-          <li><input id="gt-3" type="radio" class="visually-hidden" name="grid-type" value="3"><label for="gt-3">Резиновая</label></li>
+          <li><input aria-label="Вариант сетки - Адаптивная" id="gt-1" type="radio" class="visually-hidden" name="grid-type" value="1" checked><label for="gt-1">Адаптивная</label></li>
+          <li><input aria-label="Вариант сетки - Фиксированная" id="gt-2" type="radio" class="visually-hidden" name="grid-type" value="2"><label for="gt-2">Фиксированная</label></li>
+          <li><input aria-label="Вариант сетки - Резиновая" id="gt-3" type="radio" class="visually-hidden" name="grid-type" value="3"><label for="gt-3">Резиновая</label></li>
         </ul>
       </div>
       <div class="filter">
         <h2>Особенности:</h2>
         <ul class="filter-items">
-          <li><input id="ft-1" type="checkbox" class="visually-hidden" name="feature-slider" checked> <label for="ft-1"> Слайдер </label></li>
-          <li><input id="ft-2" type="checkbox" class="visually-hidden" name="feature-advantages" > <label for="ft-2"> Блок приемуществ </label></li>
-          <li><input id="ft-3" type="checkbox" class="visually-hidden" name="feature-news" checked> <label for="ft-3"> Новости </label></li>
-          <li><input id="ft-4" type="checkbox" class="visually-hidden" name="feature-gallery"> <label for="ft-4"> Галерея </label></li>
-          <li><input id="ft-5" type="checkbox" class="visually-hidden" name="feature-shopping_cart"><label for="ft-5">  Корзина </label></li>
+          <li><input aria-label="Особенность - Слайдер" id="ft-1" type="checkbox" class="visually-hidden" name="feature-slider" checked> <label for="ft-1"> Слайдер </label></li>
+          <li><input aria-label="Особенность - Блок приемуществ" id="ft-2" type="checkbox" class="visually-hidden" name="feature-advantages" > <label for="ft-2"> Блок приемуществ </label></li>
+          <li><input aria-label="Особенность - Новости" id="ft-3" type="checkbox" class="visually-hidden" name="feature-news" checked> <label for="ft-3"> Новости </label></li>
+          <li><input aria-label="Особенность - Галерея" id="ft-4" type="checkbox" class="visually-hidden" name="feature-gallery"> <label for="ft-4"> Галерея </label></li>
+          <li><input aria-label="Особенность - Корзина" id="ft-5" type="checkbox" class="visually-hidden" name="feature-shopping_cart"><label for="ft-5">  Корзина </label></li>
         </ul>
       </div>
-      <input type="submit" class="button button-grey button-filter-show" value="Показать">
+      <input type="submit" aria-label="Примеить фильтры" class="button button-grey button-filter-show" value="Показать">
     </form>
     <section class="main-templates">
       <h2 class="visually-hidden">Результаты поиска</h2>
@@ -71,105 +71,99 @@
         <div class="sort-items">
           <ul class="sort-list">
             <li class="sort-item">
-              <input id="sort-1" class="visually-hidden" type="radio" name="sort-type" value="1" checked><label for="sort-1"> По цене</label>
+              <input aria-label="Сортировка по цене" id="sort-1" class="sort-item-input visually-hidden" type="radio" name="sort-type" value="1" checked><label for="sort-1"> По цене</label>
             </li>
             <li class="sort-item">
-              <input id="sort-2" class="visually-hidden" type="radio" name="sort-type" value="2"><label for="sort-2"> По типу</label>
+              <input aria-label="Сортировка по типу" id="sort-2" class="sort-item-input visually-hidden" type="radio" name="sort-type" value="2"><label for="sort-2"> По типу</label>
             </li>
             <li class="sort-item">
-              <input id="sort-3" class="visually-hidden" type="radio" name="sort-type" value="3"><label for="sort-3"> По названию</label>
+              <input aria-label="Сортировка по названию" id="sort-3" class="sort-item-input visually-hidden" type="radio" name="sort-type" value="3"><label for="sort-3"> По названию</label>
             </li>
           </ul>
           <ul class="sort-list sort-list-narrow">
-            <li class="sort-item"><input id="way-1" class="visually-hidden" type="radio" name="sort-way" value="1" checked><label for="way-1"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11" fill="#231F20"/></svg></label></li>
-            <li class="sort-item"><input id="way-2" class="visually-hidden" type="radio" name="sort-way" value="2"><label for="way-2"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/></svg></label></li>
+            <li class="sort-item"><input aria-label="По убыванию" id="way-1" class="sort-item-input visually-hidden" type="radio" name="sort-way" value="1" checked><label for="way-1"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11" fill="#231F20"/></svg></label></li>
+            <li class="sort-item"><input aria-label="По возрастанию" id="way-2" class="sort-item-input visually-hidden" type="radio" name="sort-way" value="2"><label for="way-2"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/></svg></label></li>
           </ul>
         </div>
       </div>
       <div class="templates-items">
         <article class="templates-item">
-          <div class="templates-item-head">
-            
-          </div>
-          <img src="img/img-sedona.jpg" width="359" height="578"  alt="">
+          <input aria-label="Готовый шаблон Sedona" type="checkbox" class="templates-item-focus-hook visually-hidden" value="focus-hook">
           <div class="templates-item-about">
-            <h2><a id="item-1" name="item-link" href="blank.html">SEDONA</a></h2>
+            <h2><a aria-label="Подробнее о готовом шаблоне Sedona" id="item-1" class="template-item-link" href="blank.html">SEDONA</a></h2>
             <p>
               Информационный сайт<br>
               для туристов
             </p>
-            <button class="button button-red button-giant">9 900р</button>
-          </div>
+            <button aria-label="Купить готовый шаблон sedona за 9900 рублей" class="button button-red button-giant">9 900р</button>
+          </div>  
+          <div class="templates-item-head"></div>
+          <img src="img/img-sedona.jpg" width="359" height="578"  alt="">
         </article>
         <article class="templates-item">
-          <div class="templates-item-head">
-            
-          </div>
-          <img src="img/img-pink.jpg" width="359" height="578"  alt="">
+          <input aria-label="Готовый шаблон Pink App" type="checkbox" class="templates-item-focus-hook visually-hidden" value="focus-hook">
           <div class="templates-item-about">
-            <h2><a id="item-2" name="item-link" href="blank.html">Pink App</a></h2>
+            <h2><a aria-label="Подробнее о готовом шаблоне Pink App" id="item-2" class="template-item-link" href="blank.html">Pink App</a></h2>
             <p>
               Продуктовый лендинг<br>
               приложения для IOS и Android
             </p>
-            <button class="button button-red button-giant">9 900р</button>
+            <button aria-label="Купить готовый шаблон pink app за 9900 рублей" class="button button-red button-giant">9 900р</button>
           </div>
+          <div class="templates-item-head"></div>
+          <img src="img/img-pink.jpg" width="359" height="578"  alt="">
         </article>
         <article class="templates-item">
-          <div class="templates-item-head">
-            
-          </div>
-          <img src="img/img-barbershop.jpg" width="359" height="578"  alt="">
+          <input type="checkbox" class="templates-item-focus-hook visually-hidden" value="focus-hook">
           <div class="templates-item-about">
-            <h2><a id="item-3" name="item-link" href="blank.html">Barbershop</a></h2>
+            <h2><a aria-label="Готовый шаблон барбершоп" id="item-3" class="template-item-link" href="blank.html">Barbershop</a></h2>
             <p>
               Сайт салона карсоты.<br>
               Для мужчин, да.
             </p>
-            <button class="button button-red button-giant">9 900р</button>
-          </div>
+            <button aria-label="Купить готовый шаблон барбершоп за 9900 рублей" class="button button-red button-giant">9 900р</button>
+          </div> 
+          <div class="templates-item-head"></div>
+          <img src="img/img-barbershop.jpg" width="359" height="578"  alt="">
         </article>
         <article class="templates-item">
-          <div class="templates-item-head">
-            
-          </div>
-          <img src="img/img-mishka.jpg" width="359" height="578"  alt="">
+          <input aria-label="Готовый шаблон mishka" type="checkbox" class="templates-item-focus-hook visually-hidden" value="focus-hook">  
           <div class="templates-item-about">
-            <h2><a id="item-4" name="item-link" href="blank.html">Mishka</a></h2>
+            <h2><a aria-label="Подробнее о готовом шаблоне mishka" id="item-4" class="template-item-link" href="blank.html">Mishka</a></h2>
             <p>
               Интернет-магазин<br>
               Вязаных игрушек
             </p>
-            <button class="button button-red button-giant">9 900р</button>
+            <button aria-label="Купить готовый шаблон mishka за 9900 рублей" class="button button-red button-giant">9 900р</button>
           </div>
+          <div class="templates-item-head"></div>
+          <img src="img/img-mishka.jpg" width="359" height="578"  alt="">
         </article>
         <article class="templates-item">
-          <div class="templates-item-head">
-            
-          </div>
-          <img src="img/img-aplus.jpg" width="359" height="578"  alt="">
+          <input aria-label="Готовый шаблон а плюс" type="checkbox" class="templates-item-focus-hook visually-hidden" value="focus-hook">
           <div class="templates-item-about">
-            <h2><a id="item-5" name="item-link" href="blank.html">A plus</a></h2>
+            <h2><a aria-label="Подробнее о готовом шаблоне а плюс" id="item-5" class="template-item-link" href="blank.html">A plus</a></h2>
             <p>
               Лендинг курсов повышения<br>
               квалификации
             </p>
-            <button class="button button-red button-giant">9 900р</button>
+            <button aria-label="купить готовый шаблон а плюс за 9900 рублей" class="button button-red button-giant">9 900р</button>
           </div>
+          <div class="templates-item-head"></div>
+          <img src="img/img-aplus.jpg" width="359" height="578"  alt="">
         </article>
         <article class="templates-item">
-          <div class="templates-item-head">
-            
-          </div>
-          <img src="img/img-kvast.jpg" width="359" height="578"  alt="">
+          <input aria-label="Готовый шаблон Кваст" type="checkbox" class="templates-item-focus-hook visually-hidden" value="focus-hook"> 
           <div class="templates-item-about">
-            <h2><a id="item-6" name="item-link" href="blank.html">Кваст</a></h2>
+            <h2><a aria-label="Подробнее о готовом шаблоне кваст" id="item-6" class="template-item-link" href="blank.html">Кваст</a></h2>
             <p>
               Промо-сайт производителя<br>
               крафтового кваса
             </p>
-            <button class="button button-red button-giant">9 900р</button>
+            <button aria-label="купить готовый шаблон кваст за 9900 рублей" class="button button-red button-giant">9 900р</button>
           </div>
+          <div class="templates-item-head"></div>
+          <img src="img/img-kvast.jpg" width="359" height="578"  alt="">
         </article>
       </div>
       <div class="templates-pagination">
