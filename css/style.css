@@ -459,16 +459,20 @@ a {
   
 }
 
-
+.sort-item:hover label{
+  opacity: .6;
+}
 
 .sort-item-input:checked + label,
 .sort-item-input:active + label{
   opacity: 1;
 }
 
-.sort-item:hover label{
+.sort-item-input:checked:focus + label{
   opacity: .6;
 }
+
+
 
 
 
