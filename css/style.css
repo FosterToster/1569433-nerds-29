@@ -576,7 +576,6 @@ a {
   left: 0;
   right: 0;
   bottom: 100%;
-  background-color: var(--basic-black);
   z-index: 9999;
 
   transition: opacity .5s ease-in-out;
@@ -585,7 +584,6 @@ a {
 
 .modal-visible + .overlay {
   bottom: 0;
-  opacity: .3;
 }
 
 .noscroll {
