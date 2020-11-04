@@ -37,6 +37,7 @@ const index_startup = () => {
 
     /* listeners */
     const show_modal = e => {
+        e.preventDefault()
         modal_form.reset()
         disable_body_scroll()
         load_personal()

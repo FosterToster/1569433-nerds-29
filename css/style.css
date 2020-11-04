@@ -1271,7 +1271,7 @@ a {
   font-style: normal;
 }
 
-.footer-contacts a {
+.footer-contacts .phone-ref{
   font-size: 16px;
   line-height: 18px;
 
@@ -1279,9 +1279,10 @@ a {
   font-style: normal;
 }
 
-.footer-contacts button {
+.footer-contacts .button {
   margin-top: 38px;
   display: block;
+  text-align: center;
 }
 
 .footer-friends h2 {
