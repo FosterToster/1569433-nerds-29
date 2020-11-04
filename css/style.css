@@ -49,15 +49,10 @@ a {
   text-decoration: none;
 }
 
-/* .container {
-  margin: 0 140px;
-  width: 1160px;
-} */
-
 .container {
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
-  padding: 0 140px;
+  padding: 0;
 }
  
 .visual-delimiter {
@@ -66,7 +61,7 @@ a {
   border: none;
   margin: 0px auto;
 
-  max-width: 1300px;
+  max-width: 1160px;
 }
 
 .visually-hidden {
