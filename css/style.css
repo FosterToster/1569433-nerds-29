@@ -906,8 +906,6 @@ a {
   width: 25px;
 
   background-color: var(--red);
-
-
 }
 
 .about-us-achievements {
@@ -1183,16 +1181,13 @@ a {
 
 .footer-map{
   position: relative;
-  /* background-image: url("../img/map.jpg"); */
   background-color: var(--basic-grey);
   height: 416px;
 }
 
 .footer-map iframe {
   border: none;
-  /* position: absolute; */
-  /* left: 0; */
-  /* right: 0; */
+
   height: 100%;
   width: 100%;
 }
