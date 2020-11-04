@@ -1070,20 +1070,18 @@ a {
 }
 
 .templates-item:hover > .templates-item-head,
-.templates-item-focus-hook:focus ~ .templates-item-head,
 .templates-item-about:focus-within ~ .templates-item-head  {
   opacity: 1;
 }
 
 .templates-item:hover > .templates-item-about,
-.templates-item:focus-within > .templates-item-about,
-.templates-item-about:focus-within  {
-  display: flex;
+.templates-item-about:focus-within  {  
+  height: auto;
+  min-height: 231px;
 }
 
 .templates-item-about {
-  display: none;
-
+  display: flex; 
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -1094,8 +1092,10 @@ a {
   bottom: 0;
   left:0;
   right: 0;
-  min-height: 231px;
   max-height: 580px;
+  overflow: hidden;
+  
+  height: 0;
 }
 
 .templates-item-about h2 {
