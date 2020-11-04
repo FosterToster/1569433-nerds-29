@@ -170,7 +170,7 @@ a {
 
 .main-header {
   background-color: var(--basic-grey);
-  height: 238px;
+  min-height: 238px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
