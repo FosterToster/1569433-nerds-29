@@ -603,10 +603,10 @@ a {
 }
 
 .modal-header {
-  display: flex;
+  display: block;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 
   margin-bottom: 37px;
 }
@@ -644,11 +644,14 @@ a {
 }
 
 .modal-input input {
-  padding: 16px;
+  padding: 14px;
   width: 360px;
   border: 2px solid var(--modal-input-still);
   border-radius: 3px;
   outline: none;
+
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .modal-input input::placeholder,
@@ -687,7 +690,10 @@ a {
 
 .modal-close{
   content: "";
-  position: relative;
+  position: absolute;
+
+  right: 87px;
+  top: 70px;
 
   cursor: pointer;
   padding: 16px;
@@ -696,6 +702,8 @@ a {
   border: none;
 
   opacity: .3;
+
+  outline: none;
 }
 
 .modal-close:hover,
@@ -707,21 +715,7 @@ a {
   opacity: .1;
 }
 
-.modal-close::before {
-  position: absolute;
-  content: "";
-  right: 0;
-  top:50%;
-
-  border-radius: 1px;
-  width: 27px;
-  height: 4px;
-
-  background-color: var(--red);
-
-  transform: rotate(45deg);
-
-}
+.modal-close::before,
 .modal-close::after {
   position: absolute;
   content: "";
@@ -733,9 +727,13 @@ a {
   height: 4px;
 
   background-color: var(--red);
+}
 
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
   transform: rotate(-45deg);
-
 }
 /*buttons*/
 
@@ -757,6 +755,10 @@ a {
 
 .button-giant{
   padding: 17px 72px;
+}
+
+.button-modal{
+  padding: 17px 84px;
 }
 
 .button-huge {
